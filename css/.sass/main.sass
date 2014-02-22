@@ -11,6 +11,7 @@ $secondary-text-color: #FFFFFF
 $space: 15px
 body
     font-family: $body-fonts
+    color: $secondary-color
     padding: 0
 
 html, body, .ub-container
@@ -22,10 +23,15 @@ html, body, .ub-container
 h1, h2, h3, h4
     font-family: $heading-fonts
 
+h1 
+    font-size: 56px
+    margin-top: 0
+
 nav
     font-family: $heading-fonts
-    font-size: 2em
-    line-height: 0.9em
+    font-size: 32px
+    line-height: 23px
+    margin-left: $space * 3
 
     li:first-child a
         padding-top: 0
@@ -38,6 +44,17 @@ nav
             &:focus, &:hover
                 background-color: $secondary-color !important
                 color: $secondary-text-color
+
+    hr 
+        margin: $space auto
+        width: 80%
+
+.ub-desc
+    font-family: $body-fonts
+    font-size: 16px
+    color: $secondary-text-color
+    font-weight: bold
+    padding-top: 0 !important
 
 .ub-bg-image
     background-color: $secondary-color
@@ -57,7 +74,7 @@ nav
     margin: 0 auto 
 
 .ub-content
-    background-color: rgba($tertiary-color, 0.5)
+    background-color: rgba($tertiary-color, 0.7)
 
 .ub-column
     height: 100%
@@ -68,11 +85,6 @@ nav
     background-color: $secondary-color
     .container 
         margin: 0 auto
-
-
-nav 
-    margin-left: $space * 3
-
 .navbar-header
     margin: 0 auto
     text-align: center
@@ -86,9 +98,8 @@ nav
     padding: $space
     margin: 0 auto
 
-
 .ub-content, .ub-sidebar
-    padding-top: $space * 2
+    padding-top: $space * 4
 
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)
@@ -96,6 +107,7 @@ nav
 // Hours
 .ub-deets
     margin-bottom: $space
+    margin-top: $space * 4
     hr 
         margin: $space 0
     
