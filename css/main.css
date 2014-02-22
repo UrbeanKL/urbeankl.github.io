@@ -1,3 +1,24 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/pirateFsh\/Documents\/GitHub\/urbean-site\/css\/\.sass\/main\.sass}line{font-family:\000031}}
+@import url("../fonts/font-styles.css");
 body {
-  font-family: Arial; }
+  font-family: "Courier New", "Lucida Console", monospace;
+  padding: 0; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: "dk_kwarkregular", Arial, sans-serif; }
+
+nav {
+  font-family: "dk_kwarkregular", Arial, sans-serif;
+  font-size: 2em; }
+
+.ub-column {
+  height: 100%; }
+
+.ub-sidebar {
+  background-color: #1f1a21;
+  color: white;
+  height: 1000px; }

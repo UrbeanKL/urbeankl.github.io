@@ -1,2 +1,30 @@
+@import url('../fonts/font-styles.css')
+
+$body-fonts:  'Courier New', 'Lucida Console', monospace
+$heading-fonts:  'dk_kwarkregular', Arial, sans-serif
+
+$secondary-color: #1F1A21
+$secondary-text-color: #FFFFFF
 body
-    font-family: Arial    
+    font-family: $body-fonts
+    padding: 0
+
+html, body, .container
+    width: 100%
+    height: 100%
+    max-width: 100%
+
+h1, h2, h3, h4
+    font-family: $heading-fonts
+
+nav
+    font-family: $heading-fonts
+    font-size: 2em
+.ub-column
+    height: 100%
+
+.ub-sidebar
+    background-color: $secondary-color
+    color: $secondary-text-color
+    height: 1000px
+

@@ -2,9 +2,9 @@
     "output_path": "..",  
     "options": {  
         "cache":         true,  
-        "debug":         true,  
-        "line-comments": true,  
-        "line-numbers":  true,  
+        "debug":         false,  
+        "line-comments": false,  
+        "line-numbers":  false,  
         "style":         "nested"  
     }  
 }  
