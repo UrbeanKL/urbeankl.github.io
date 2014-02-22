@@ -2,17 +2,22 @@
 
 $body-fonts:  'Courier New', 'Lucida Console', monospace
 $heading-fonts:  'dk_kwarkregular', Arial, sans-serif
+$tertiary-fonts:  'kg_one_more_nightregular', Arial, sans-serif
 
 $secondary-color: #1F1A21
+$tertiary-color: #FFFFFF
 $secondary-text-color: #FFFFFF
+
+$space: 15px
 body
     font-family: $body-fonts
     padding: 0
 
-html, body, .container
+html, body, .ub-container
     width: 100%
     height: 100%
     max-width: 100%
+    position: relative
 
 h1, h2, h3, h4
     font-family: $heading-fonts
@@ -20,11 +25,127 @@ h1, h2, h3, h4
 nav
     font-family: $heading-fonts
     font-size: 2em
+    line-height: 0.9em
+
+    li:first-child a
+        padding-top: 0
+
+    li a
+        color: $secondary-text-color
+        & :active
+            color: rgba($secondary-color, 0.8)
+
+.ub-bg-image
+    background-color: $secondary-color
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -9999
+    height: 100%
+    width: 100%
+
+    img 
+        display: block
+        height: auto
+        width: 100%
+
+.ub-logo, .img-responsive, .navbar-toggle
+    margin: 0 auto 
+
+.ub-content
+    background-color: rgba($tertiary-color, 0.5)
+
 .ub-column
     height: 100%
 
-.ub-sidebar
+.ub-sidebar-container
+    display: block
+    padding-right: 20px
     background-color: $secondary-color
+    .container 
+        margin: 0 auto
+
+
+nav 
+    margin-left: $space * 3
+
+.navbar-header
+    margin: 0 auto
+    text-align: center
+    margin-left: 0
+    margin-right: 0
+.ub-sidebar
+    position: fixed
+    left: 0
+    height: 100%
+    width: inherit
+    padding: $space
+    margin: 0 auto
+
+
+.ub-content, .ub-sidebar
+    padding-top: $space * 2
+
+.ub-reveal
+    background-color: rgba($tertiary-color, 0.5)
+
+// Hours
+.ub-deets
+    margin-bottom: $space
+    hr 
+        margin: $space 0
+    
+.ub-days
+    font-size: 2em
+    font-weight: bold
+    line-height: 100%
+
+.ub-hours 
+    font-family: $heading-fonts
+    font-size: 3.6em
+    line-height: 100%
+
+.ub-address
+    font-family: $tertiary-fonts
+    font-size: 2.4em
+    line-height: 100%
+
+.ub-address-st
+    font-size: 1.4em
+
+// Social
+.ub-social
+    margin-top: $space 
+
+// Overwrite Bootstrap
+.navbar, .nav
+    background-color: $secondary-color
+    background-image: none
     color: $secondary-text-color
-    height: 1000px
+
+.row 
+    margin: 0
+.navbar 
+    border: none
+    border-radius: 0
+.navbar-toggle 
+    margin: $space
+    float: none
+.navbar-collapse
+    margin: 0
+    padding: 0
+
+// General CSS
+ul.ub-fit-list, ol.ub-fit-list
+    width: 100%
+    padding: 0
+    display: table 
+    li 
+        display: table-cell
+        text-align: center
+        &:first-child
+            text-align: left
+        &:last-child
+            text-align: right
+
 

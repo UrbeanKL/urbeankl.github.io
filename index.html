@@ -21,52 +21,94 @@
 </head>
 <body>
     <div class="ub-container row">
-    <div class="ub-column ub-sidebar col-md-2 col-lg-2">
-        <nav>
-            <ul class="nav">
-                <li>Our Story</li>
-                <li>Menu</li>
-                <li>Gallery</li>
-                <li>Events</li>
-                <li>Find Us</li>
-            </ul>
-        </nav>
 
-        <div class="ub-hours">
+        <div class="ub-bg-image">
+            <img class="img-responsive" src="img/bg.png" alt=""/>
         </div>
-    </div>
+        <div class="ub-sidebar-container ub-column col-xs-2 col-sm-4 col-md-2 col-lg-2">
+            <div class="navbar navbar-inverse ub-sidebar">
+                <div class="container">
+                <div class="navbar-header">
+                    <img class="ub-logo img-responsive" src="img/logo.png"/>
+                    <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-    <div class="ub-column ub-content col-md-5 col-lg-5">
-        <section class="ub-story ">
-            <h1>Our Story</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+                <div class="navbar-collapse collapse">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="story">Our Story</a></li>
+                        <li><a href="menu">Menu</a></li>
+                        <li><a href="gallery">Gallery</a></li>
+                        <li><a href="events">Events</a></li>
+                        <li><a href="find">Find us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="ub-deets">
+                    <div class="ub-days">open daily</div>
+                    <div class="ub-hours">10A - 10P</div>
+                    <hr/>
+                    <div class="ub-address">
+                        <span class="ub-address-st">C-14, Avenue K</span>
+                        <br/>
+                        50450 Kuala Lumpur
+                    </div>
+
+                    <div class="ub-social">
+                        <ul class="ub-fit-list">
+                            <li><a href="#"><img src="img/social/ub-social-03.png"/></a></li>
+                            <li><a href="#"><img src="img/social/ub-social-01.png"/></a></li>
+                            <li><a href="#"><img src="img/social/ub-social-02.png"/></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="ub-column ub-content col-xs-10 col-sm-8 col-md-5 col-lg-5">
+                <section class="ub-story ">
+                    <h1>Our Story</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-    </div>
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+            </div>
 
-    <div class="ub-column ub-reveal col-md-5 col-lg-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <div class="ub-column ub-reveal hide col-sm-12 col-md-5 col-lg-5">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    </div>
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
 
-<script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
-<script src="js/main.js"></script>
-
-<script>
+    <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
