@@ -19,9 +19,12 @@ nav {
   nav li:first-child a {
     padding-top: 0; }
   nav li a {
-    color: white; }
-    nav li a :active {
-      color: rgba(31, 26, 33, 0.8); }
+    color: rgba(255, 255, 255, 0.7); }
+    nav li a:active {
+      color: white; }
+    nav li a:focus, nav li a:hover {
+      background-color: #1f1a21 !important;
+      color: white; }
 
 .ub-bg-image {
   background-color: #1f1a21;
@@ -114,7 +117,7 @@ nav {
   border-radius: 0; }
 
 .navbar-toggle {
-  margin: 15px;
+  margin: 15px 0;
   float: none; }
 
 .navbar-collapse {

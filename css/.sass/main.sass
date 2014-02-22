@@ -30,10 +30,14 @@ nav
     li:first-child a
         padding-top: 0
 
-    li a
-        color: $secondary-text-color
-        & :active
-            color: rgba($secondary-color, 0.8)
+    li 
+        a
+            color: rgba($secondary-text-color, 0.7)
+            &:active
+                color: $secondary-text-color
+            &:focus, &:hover
+                background-color: $secondary-color !important
+                color: $secondary-text-color
 
 .ub-bg-image
     background-color: $secondary-color
@@ -129,7 +133,7 @@ nav
     border: none
     border-radius: 0
 .navbar-toggle 
-    margin: $space
+    margin: $space 0
     float: none
 .navbar-collapse
     margin: 0
