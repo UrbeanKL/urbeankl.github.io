@@ -9,6 +9,8 @@ $tertiary-color: #FFFFFF
 $secondary-text-color: #FFFFFF
 
 $space: 15px
+
+// DOM OBJECTS
 body
     font-family: $body-fonts
     color: $secondary-color
@@ -49,6 +51,10 @@ nav
         margin: $space auto
         width: 80%
 
+p 
+    font-weight: bold
+
+//URBEAN CLASSES
 .ub-desc
     font-family: $body-fonts
     font-size: 16px
@@ -58,13 +64,12 @@ nav
 
 .ub-bg-image
     background-color: $secondary-color
-    position: absolute
+    position: fixed
     top: 0
     right: 0
     z-index: -9999
     height: 100%
     width: 100%
-
     img 
         display: block
         height: auto
@@ -76,8 +81,8 @@ nav
 .ub-content
     background-color: rgba($tertiary-color, 0.7)
 
-.ub-column
-    height: 100%
+.ub-section
+    min-height: 1000px
 
 .ub-sidebar-container
     display: block
@@ -85,11 +90,7 @@ nav
     background-color: $secondary-color
     .container 
         margin: 0 auto
-.navbar-header
-    margin: 0 auto
-    text-align: center
-    margin-left: 0
-    margin-right: 0
+
 .ub-sidebar
     position: fixed
     left: 0
@@ -100,50 +101,51 @@ nav
 
 .ub-content, .ub-sidebar
     padding-top: $space * 4
-
+    
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)
 
 // Hours
 .ub-deets
+    display: inline-block
     margin-bottom: $space
     margin-top: $space * 4
     hr 
         margin: $space 0
-    
 .ub-days
     font-size: 2em
     font-weight: bold
     line-height: 100%
-
 .ub-hours 
     font-family: $heading-fonts
     font-size: 3.6em
     line-height: 100%
-
 .ub-address
     font-family: $tertiary-fonts
-    font-size: 2.4em
+    font-size: 2.5em
     line-height: 100%
-
 .ub-address-st
     font-size: 1.4em
 
-// Social
+// SOCIAL
 .ub-social
     margin-top: $space 
 
-// Overwrite Bootstrap
+// BOOTSTRAP OVERWRITE
 .navbar, .nav
     background-color: $secondary-color
     background-image: none
     color: $secondary-text-color
-
 .row 
     margin: 0
 .navbar 
     border: none
     border-radius: 0
+.navbar-header
+    margin: 0 auto
+    text-align: center
+    margin-left: 0
+    margin-right: 0
 .navbar-toggle 
     margin: $space 0
     float: none

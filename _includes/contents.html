@@ -1,0 +1,14 @@
+<h1>content</h1>
+
+{% for post in site.posts %}
+
+<section class="ub-section ub-story">
+
+    <h1>{{post.title}}</h1>
+    <p>
+        {{post.content}}
+    </p>
+
+</section>
+
+{% endfor %}
