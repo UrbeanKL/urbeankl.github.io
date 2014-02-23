@@ -152,10 +152,14 @@ p {
 .navbar-collapse {
   border: 0px;
   -webkit-box-shadow: none;
+  width: 100%;
   margin: 0 0 0 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden; }
+
+.navbar-collapse.in {
+  margin-left: 45px; }
 
 .container {
   display: table-row;
@@ -178,7 +182,3 @@ ul.ub-fit-list, ol.ub-fit-list {
       text-align: left; }
     ul.ub-fit-list li:last-child, ol.ub-fit-list li:last-child {
       text-align: right; }
-
-@media (max-width: 768px) {
-  .navbar-header {
-    position: relative; } }
