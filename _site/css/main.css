@@ -37,7 +37,7 @@ h1 {
         background-color: #1f1a21 !important;
         color: white; }
   .nav hr {
-    margin: 15px auto;
+    margin: 15px;
     width: 90%; }
 
 p {
@@ -98,6 +98,8 @@ p {
 
 .ub-deets {
   margin-bottom: 15px;
+  float: left;
+  clear: both;
   margin-top: 60px; }
   .ub-deets hr {
     margin: 15px 0; }
@@ -144,7 +146,6 @@ p {
   margin-left: 0;
   margin-right: 0;
   display: table-cell;
-  float: left;
   clear: none;
   position: absolute; }
 
