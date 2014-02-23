@@ -20,17 +20,20 @@ h1 {
 nav {
   font-family: "dk_kwarkregular", Arial, sans-serif;
   font-size: 32px;
-  line-height: 23px;
+  line-height: 25px;
   margin-left: 45px; }
   nav li:first-child a {
     padding-top: 0; }
-  nav li a {
-    color: rgba(255, 255, 255, 0.7); }
-    nav li a:active {
-      color: white; }
-    nav li a:focus, nav li a:hover {
-      background-color: #1f1a21 !important;
-      color: white; }
+  nav li {
+    clear: both; }
+    nav li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.7); }
+      nav li a:active {
+        color: white; }
+      nav li a:focus, nav li a:hover {
+        background-color: #1f1a21 !important;
+        color: white; }
   nav hr {
     margin: 15px auto;
     width: 80%; }
