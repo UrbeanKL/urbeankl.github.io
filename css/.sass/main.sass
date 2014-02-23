@@ -38,6 +38,7 @@ h1
         padding-top: 0
 
     li 
+        width: 100%
         clear: both
         a
             display: block
@@ -49,7 +50,7 @@ h1
                 color: $secondary-text-color
 
     hr 
-        margin: $space auto
+        margin: $space
         width: 90%
 
 p 
@@ -111,6 +112,7 @@ p
 
 // Hours
 .ub-deets
+    float: left
     margin-bottom: $space
     margin-top: $space * 4
     hr 
@@ -152,9 +154,6 @@ p
     margin-left: 0
     margin-right: 0
     display: table-cell
-    float: left
-    clear: none
-
     position: absolute 
 
 .navbar-collapse
@@ -165,11 +164,6 @@ p
     padding: 0
     overflow-x: hidden
     overflow-y: hidden
-// .navbar-collapse.in 
-//     margin-left: $space * 3
-
-//     // &:before, &:after
-//     //     display: inline 
 .container
     display: table-row
     width: 100%

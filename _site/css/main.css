@@ -25,6 +25,7 @@ h1 {
   .nav li:first-child a {
     padding-top: 0; }
   .nav li {
+    width: 100%;
     clear: both; }
     .nav li a {
       display: block;
@@ -35,7 +36,7 @@ h1 {
         background-color: #1f1a21 !important;
         color: white; }
   .nav hr {
-    margin: 15px auto;
+    margin: 15px;
     width: 90%; }
 
 p {
@@ -95,6 +96,7 @@ p {
   background-color: rgba(255, 255, 255, 0.5); }
 
 .ub-deets {
+  float: left;
   margin-bottom: 15px;
   margin-top: 60px; }
   .ub-deets hr {
@@ -142,8 +144,6 @@ p {
   margin-left: 0;
   margin-right: 0;
   display: table-cell;
-  float: left;
-  clear: none;
   position: absolute; }
 
 .navbar-collapse {
