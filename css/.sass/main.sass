@@ -156,22 +156,19 @@ p
     display: table-cell
     float: left
     clear: none
-
     position: absolute 
 
 .navbar-collapse
     border: 0px
     -webkit-box-shadow: none
-    width: 100%
     margin: 0 0 0 0 
     padding: 0
     overflow-x: hidden
     overflow-y: hidden
-.navbar-collapse.in 
-    margin-left: $space * 3
 
-    // &:before, &:after
-    //     display: inline 
+// .navbar-collapse.in 
+//     margin-left: $space * 3
+
 .container
     display: table-row
     width: 100%
@@ -194,6 +191,8 @@ ul.ub-fit-list, ol.ub-fit-list
             text-align: right
 
 
-// @media (min-width: 768px) 
+@media (max-width: 768px) 
+    .navbar-header
+        position: relative
 //     .navbar-collapse.collapse
 //         display: inline !important
