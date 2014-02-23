@@ -29,12 +29,13 @@ h1
     font-size: 56px
     margin-top: 0
 
-nav
+.nav
     font-family: $heading-fonts
     font-size: 32px
     line-height: 25px
     margin-left: $space * 3
-
+    clear: none !important
+    display: inline !important
     li:first-child a
         padding-top: 0
 
@@ -51,7 +52,7 @@ nav
 
     hr 
         margin: $space auto
-        width: 80%
+        width: 90%
 
 p 
     font-weight: bold
@@ -112,7 +113,6 @@ p
 
 // Hours
 .ub-deets
-    display: inline-block
     margin-bottom: $space
     margin-top: $space * 4
     hr 
@@ -146,23 +146,35 @@ p
 .navbar 
     border: none
     border-radius: 0
+.navbar-nav
+    margin: 0 0 0 $space * 3
 .navbar-header
     margin: 0 auto
     text-align: center
     margin-left: 0
     margin-right: 0
     display: table-cell
+    float: left
+    clear: none
+
+    position: absolute 
 
 .navbar-collapse
-    // display: table-cell
-    margin: 0
+    border: 0px
+    -webkit-box-shadow: none
+    width: 100%
+    margin: 0 0 0 0 
     padding: 0
-    // display: table-cell
+    overflow-x: hidden
+    overflow-y: hidden
+.navbar-collapse.in 
+    margin-left: $space * 3
 
     // &:before, &:after
     //     display: inline 
 .container
     display: table-row
+    width: 100%
 .navbar-toggle 
     margin-bottom: $space
     margin-top: -$space

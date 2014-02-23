@@ -17,26 +17,28 @@ h1 {
   font-size: 56px;
   margin-top: 0; }
 
-nav {
+.nav {
   font-family: "dk_kwarkregular", Arial, sans-serif;
   font-size: 32px;
   line-height: 25px;
-  margin-left: 45px; }
-  nav li:first-child a {
+  margin-left: 45px;
+  clear: none !important;
+  display: inline !important; }
+  .nav li:first-child a {
     padding-top: 0; }
-  nav li {
+  .nav li {
     clear: both; }
-    nav li a {
+    .nav li a {
       display: block;
       color: rgba(255, 255, 255, 0.7); }
-      nav li a:active {
+      .nav li a:active {
         color: white; }
-      nav li a:focus, nav li a:hover {
+      .nav li a:focus, .nav li a:hover {
         background-color: #1f1a21 !important;
         color: white; }
-  nav hr {
+  .nav hr {
     margin: 15px auto;
-    width: 80%; }
+    width: 90%; }
 
 p {
   font-weight: bold; }
@@ -95,7 +97,6 @@ p {
   background-color: rgba(255, 255, 255, 0.5); }
 
 .ub-deets {
-  display: inline-block;
   margin-bottom: 15px;
   margin-top: 60px; }
   .ub-deets hr {
@@ -134,19 +135,34 @@ p {
   border: none;
   border-radius: 0; }
 
+.navbar-nav {
+  margin: 0 0 0 45px; }
+
 .navbar-header {
   margin: 0 auto;
   text-align: center;
   margin-left: 0;
   margin-right: 0;
-  display: table-cell; }
+  display: table-cell;
+  float: left;
+  clear: none;
+  position: absolute; }
 
 .navbar-collapse {
-  margin: 0;
-  padding: 0; }
+  border: 0px;
+  -webkit-box-shadow: none;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.navbar-collapse.in {
+  margin-left: 45px; }
 
 .container {
-  display: table-row; }
+  display: table-row;
+  width: 100%; }
 
 .navbar-toggle {
   margin-bottom: 15px;
