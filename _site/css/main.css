@@ -21,9 +21,7 @@ h1 {
   font-family: "dk_kwarkregular", Arial, sans-serif;
   font-size: 32px;
   line-height: 25px;
-  margin-left: 45px;
-  clear: none !important;
-  display: inline !important; }
+  margin-left: 45px; }
   .nav li:first-child a {
     padding-top: 0; }
   .nav li {
@@ -156,9 +154,6 @@ p {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden; }
-
-.navbar-collapse.in {
-  margin-left: 45px; }
 
 .container {
   display: table-row;
