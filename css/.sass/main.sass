@@ -84,6 +84,9 @@ p
 .ub-section
     min-height: 1000px
 
+
+.ub-column
+    padding: 0 $space * 2
 .ub-sidebar-container
     display: block
     padding-right: 20px
@@ -146,13 +149,23 @@ p
     text-align: center
     margin-left: 0
     margin-right: 0
-.navbar-toggle 
-    margin: $space 0
-    float: none
+    display: table-cell
+
 .navbar-collapse
+    // display: table-cell
     margin: 0
     padding: 0
+    // display: table-cell
 
+    // &:before, &:after
+    //     display: inline 
+.container
+    display: table-row
+.navbar-toggle 
+    margin-bottom: $space
+    margin-top: -$space
+    float: none
+    clear: none
 // General CSS
 ul.ub-fit-list, ol.ub-fit-list
     width: 100%
@@ -167,3 +180,6 @@ ul.ub-fit-list, ol.ub-fit-list
             text-align: right
 
 
+// @media (min-width: 768px) 
+//     .navbar-collapse.collapse
+//         display: inline !important

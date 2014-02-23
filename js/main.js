@@ -15,7 +15,7 @@ $(function() {
 });
 
 
-// Responsive menu toggle
+// Responsive menu close on menu item click
 $(function(){
     var navbarToggle = $('.navbar-toggle');
 
@@ -24,4 +24,14 @@ $(function(){
             navbarToggle.trigger('click');
         }
     });
+})
+
+
+$(function(){
+    var navbarToggle = $('.navbar-toggle');
+
+    navbarToggle.click(function(){
+        $(".ub-sidebar-container").toggleClass('col-xs-2')
+        $(".ub-sidebar-container").toggleClass('col-xs-12')
+    })
 })

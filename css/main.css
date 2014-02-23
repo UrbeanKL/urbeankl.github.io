@@ -67,6 +67,9 @@ p {
 .ub-section {
   min-height: 1000px; }
 
+.ub-column {
+  padding: 0 30px; }
+
 .ub-sidebar-container {
   display: block;
   padding-right: 20px;
@@ -132,15 +135,21 @@ p {
   margin: 0 auto;
   text-align: center;
   margin-left: 0;
-  margin-right: 0; }
-
-.navbar-toggle {
-  margin: 15px 0;
-  float: none; }
+  margin-right: 0;
+  display: table-cell; }
 
 .navbar-collapse {
   margin: 0;
   padding: 0; }
+
+.container {
+  display: table-row; }
+
+.navbar-toggle {
+  margin-bottom: 15px;
+  margin-top: -15px;
+  float: none;
+  clear: none; }
 
 ul.ub-fit-list, ol.ub-fit-list {
   width: 100%;
