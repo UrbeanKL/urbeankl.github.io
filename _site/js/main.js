@@ -30,8 +30,7 @@ $(function(){
 $(function(){
     var navbarToggle = $('.navbar-toggle');
 
+
     navbarToggle.click(function(){
-        $(".ub-sidebar-container").toggleClass('col-xs-2')
-        $(".ub-sidebar-container").toggleClass('col-xs-12')
     })
 })

@@ -80,20 +80,25 @@ p
     padding: $space
     width: inherit
     background-color: $secondary-color
+    text-align: center
     color: $secondary-text-color
 
 .ub-section, .ub-sidebar
     padding-top: $space * 4
 
 .ub-sidebar-header
-    display: table-cell
+    // display: table-cell
+    float: left
+    width: 30%
     vertical-align: top
     text-align: center
-    
+
 .ub-sidebar-collapse
+    text-align: left
+    float: right
+    width: 70%
     vertical-align: top
-    display: table-cell
-    padding-left: $space
+    // display: table-cell
 
 ul.ub-nav
     padding-left: 0
@@ -128,17 +133,24 @@ ul.ub-nav
 
 .ub-logo 
     display: block
+    margin: 0 auto
 
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)
 
 // Hours
 .ub-deets
-    float: left
+    display: block
+    clear: both
+    margin: 0 auto
     margin-bottom: $space
-    margin-top: $space * 4
+    padding-top: $space * 4
     hr 
         margin: $space 0
+    
+.ub-deets-container
+    padding: auto $space*5
+
 .ub-days
     font-size: 2em
     font-weight: bold
@@ -169,6 +181,7 @@ ul.ub-nav
 .navbar
     background-color: $secondary-color
     background-image: none
+    border-radius: 0px
 
 .navbar-toggle 
     margin: 0
@@ -178,6 +191,7 @@ ul.ub-nav
     // background-color: rgba($tertiary-color, 0.4)
     .icon-bar
         background-color: $tertiary-color
+
 
 // General CSS
 ul.ub-fit-list, ol.ub-fit-list
@@ -191,3 +205,19 @@ ul.ub-fit-list, ol.ub-fit-list
             text-align: left
         &:last-child
             text-align: right
+
+.clear, .hidden-xs
+    clear: both
+
+// RESPONSIVE
+
+$xs-width: 767px
+$sm-max-width: 991px
+$sm-min-width: 768px
+
+@media (max-width: $sm-min-width)
+    .ub-sidebar-header
+        width: 100%
+    .ub-expanded
+        width: 30%
+    

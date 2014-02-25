@@ -63,20 +63,23 @@ p {
   padding: 15px;
   width: inherit;
   background-color: #1f1a21;
+  text-align: center;
   color: white; }
 
 .ub-section, .ub-sidebar {
   padding-top: 60px; }
 
 .ub-sidebar-header {
-  display: table-cell;
+  float: left;
+  width: 30%;
   vertical-align: top;
   text-align: center; }
 
 .ub-sidebar-collapse {
-  vertical-align: top;
-  display: table-cell;
-  padding-left: 15px; }
+  text-align: left;
+  float: right;
+  width: 70%;
+  vertical-align: top; }
 
 ul.ub-nav {
   padding-left: 0;
@@ -106,17 +109,23 @@ ul.ub-nav {
     float: left; }
 
 .ub-logo {
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 .ub-reveal {
   background-color: rgba(255, 255, 255, 0.5); }
 
 .ub-deets {
-  float: left;
+  display: block;
+  clear: both;
+  margin: 0 auto;
   margin-bottom: 15px;
-  margin-top: 60px; }
+  padding-top: 60px; }
   .ub-deets hr {
     margin: 15px 0; }
+
+.ub-deets-container {
+  padding: auto 75px; }
 
 .ub-days {
   font-size: 2em;
@@ -148,7 +157,8 @@ ul.ub-nav {
 
 .navbar {
   background-color: #1f1a21;
-  background-image: none; }
+  background-image: none;
+  border-radius: 0px; }
 
 .navbar-toggle {
   margin: 0;
@@ -169,3 +179,13 @@ ul.ub-fit-list, ol.ub-fit-list {
       text-align: left; }
     ul.ub-fit-list li:last-child, ol.ub-fit-list li:last-child {
       text-align: right; }
+
+.clear, .hidden-xs {
+  clear: both; }
+
+@media (max-width: 768px) {
+  .ub-sidebar-header {
+    width: 100%; }
+
+  .ub-expanded {
+    width: 30%; } }
