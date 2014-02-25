@@ -235,7 +235,9 @@ ul.ub-fit-list, ol.ub-fit-list {
   clear: both; }
 
 .ub-expanded {
-  width: 100%; }
+  width: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s; }
 
 @media (max-width: 768px) {
   .ub-sidebar-header {
