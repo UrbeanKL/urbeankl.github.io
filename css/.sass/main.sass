@@ -76,17 +76,20 @@ p
     padding-top: 0 !important
 
 .ub-bg-image
+    background-image: url('../img/bg.png')
     background-color: $secondary-color
+    background-position: center
     position: fixed
     top: 0
     right: 0
     z-index: -9999
     height: 100%
     width: 100%
+    overflow: hidden
     img 
-        display: block
-        height: auto
-        width: 100%
+        display: none
+        max-width: auto
+        max-height: 100%
 
 .ub-content
     background-color: rgba($tertiary-color, 0.7)
@@ -94,28 +97,31 @@ p
 .ub-section
     min-height: 1000px
 
-
 .ub-column
     padding: 0 $space * 2
 
+.ub-section, .ub-sidebar
+    padding-top: $space * 4
+
 .ub-sidebar-container
-    display: block
-    .container 
-        margin: 0 auto
+    position: relative
+    z-index: 10
+    height: 100%
+    padding: 0
 
 .ub-sidebar
-    display: table-row
+    min-width: 60px !important
     position: fixed
     left: 0
     height: 100%
-    padding: $space * 1.5
     width: inherit
     background-color: $secondary-color
-    text-align: center
     color: $secondary-text-color
 
-.ub-section, .ub-sidebar
-    padding-top: $space * 4
+.ub-sidebar-wrapper
+    width: 90%
+    margin: 0 auto
+    padding-left: $space * 1.5
 
 .ub-sidebar-header
     // display: table-cell
@@ -148,6 +154,7 @@ ul.ub-nav
 
 .ub-logo 
     display: block
+    clear: both
     // margin: 0 auto
 
 .ub-reveal
@@ -238,4 +245,9 @@ $sm-min-width: 768px
         width: 30%
     .ub-logo
         margin: 0 auto
-    
+
+    .ub-sidebar 
+        background-color: rgba($secondary-color, 0.8)
+
+    .ub-sidebar-wrapper
+        padding-left: 0
