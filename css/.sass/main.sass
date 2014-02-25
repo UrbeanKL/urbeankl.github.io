@@ -12,7 +12,7 @@ $space: 15px
 
 $nav-line-height: 36px
 
-// DOM OBJECTS
+//Basics
 body
     font-family: $body-fonts
     color: $secondary-color
@@ -35,8 +35,7 @@ p
     font-weight: bold
 
 
-//URBEAN CLASSES
-
+//Custom classes
 @mixin nav-style($color, $bg-color, $font-sz)
     li 
         font-size: $font-sz
@@ -58,14 +57,6 @@ p
             border-top: 1px solid rgba($color, 0.7)
             background-color: $color
             float: left
-
-.ub-mobile-deets
-    font-size: 1.5em
-
-.ub-mobile
-    position: absolute
-    top: 0
-    left: -9999px
 
 .ub-desc
     font-family: $body-fonts
@@ -100,6 +91,7 @@ p
 .ub-column
     padding: 0 $space * 2
 
+// Sidebar stuff
 .ub-section, .ub-sidebar
     padding-top: $space * 4
 
@@ -135,8 +127,8 @@ p
     float: right
     width: 70%
     vertical-align: top
-    // display: table-cell
 
+// Nav stuff
 ul.ub-nav
     padding-left: 0
     margin-left: 0
@@ -155,7 +147,6 @@ ul.ub-nav
 .ub-logo 
     display: block
     clear: both
-    // margin: 0 auto
 
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)
@@ -189,11 +180,21 @@ ul.ub-nav
 .ub-address-st
     font-size: 1.4em
 
-// SOCIAL
+// Social
 .ub-social
     margin-top: $space 
 
-// BOOTSTRAP OVERWRITE
+
+// Mobile classes
+.ub-mobile-deets
+    font-size: 1.5em
+
+.ub-mobile
+    position: absolute
+    top: 0
+    left: -9999px
+
+// DANGER: BOOTSTRAP OVERWRITE
 .row 
     margin: 0
 
@@ -232,8 +233,7 @@ ul.ub-fit-list, ol.ub-fit-list
 .clear, .hidden-xs
     clear: both
 
-// RESPONSIVE
-
+// Custom responsive -- may override Bootstrap
 $xs-width: 767px
 $sm-max-width: 991px
 $sm-min-width: 768px

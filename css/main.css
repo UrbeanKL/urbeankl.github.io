@@ -20,14 +20,6 @@ h1 {
 p {
   font-weight: bold; }
 
-.ub-mobile-deets {
-  font-size: 1.5em; }
-
-.ub-mobile {
-  position: absolute;
-  top: 0;
-  left: -9999px; }
-
 .ub-desc {
   font-family: "Courier New", "Lucida Console", monospace;
   font-size: 16px;
@@ -188,6 +180,14 @@ ul.ub-nav {
 
 .ub-social {
   margin-top: 15px; }
+
+.ub-mobile-deets {
+  font-size: 1.5em; }
+
+.ub-mobile {
+  position: absolute;
+  top: 0;
+  left: -9999px; }
 
 .row {
   margin: 0; }
