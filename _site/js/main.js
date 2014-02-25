@@ -32,5 +32,7 @@ $(function(){
 
 
     navbarToggle.click(function(){
+        $(".ub-mobile-nav").removeClass('hide')
+        $(".ub-mobile-deets").removeClass('hide')
     })
 })

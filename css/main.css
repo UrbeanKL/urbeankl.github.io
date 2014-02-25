@@ -20,6 +20,14 @@ h1 {
 p {
   font-weight: bold; }
 
+.ub-mobile-deets {
+  font-size: 1.5em; }
+
+.ub-mobile {
+  position: absolute;
+  top: 0;
+  left: -9999px; }
+
 .ub-desc {
   font-family: "Courier New", "Lucida Console", monospace;
   font-size: 16px;
@@ -60,7 +68,7 @@ p {
   position: fixed;
   left: 0;
   height: 100%;
-  padding: 15px;
+  padding: 22.5px;
   width: inherit;
   background-color: #1f1a21;
   text-align: center;
@@ -89,28 +97,52 @@ ul.ub-nav {
 .ub-nav {
   margin: 0;
   font-family: "dk_kwarkregular", Arial, sans-serif; }
-  .ub-nav li:first-child a {
-    padding-top: 0; }
   .ub-nav li {
     font-size: 32px;
-    line-height: 40px;
-    clear: both; }
+    line-height: 32px;
+    clear: both;
+    width: 100%; }
     .ub-nav li a {
       display: block;
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none; }
       .ub-nav li a:active {
         color: white; }
       .ub-nav li a:focus, .ub-nav li a:hover {
         background-color: #1f1a21 !important;
         color: white; }
-  .ub-nav hr {
-    margin: 15px 0;
+    .ub-nav li hr {
+      width: 90%;
+      color: rgba(255, 255, 255, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.7);
+      background-color: white;
+      float: left; }
+  .ub-nav li:first-child a {
+    padding-top: 0; }
+
+.ub-nav-inverse li {
+  font-size: 40px;
+  line-height: 40px;
+  clear: both;
+  width: 100%; }
+  .ub-nav-inverse li a {
+    display: block;
+    color: rgba(31, 26, 33, 0.7);
+    text-decoration: none; }
+    .ub-nav-inverse li a:active {
+      color: #1f1a21; }
+    .ub-nav-inverse li a:focus, .ub-nav-inverse li a:hover {
+      background-color: transparent !important;
+      color: #1f1a21; }
+  .ub-nav-inverse li hr {
     width: 90%;
+    color: rgba(31, 26, 33, 0.7);
+    border-top: 1px solid rgba(31, 26, 33, 0.7);
+    background-color: #1f1a21;
     float: left; }
 
 .ub-logo {
-  display: block;
-  margin: 0 auto; }
+  display: block; }
 
 .ub-reveal {
   background-color: rgba(255, 255, 255, 0.5); }
@@ -125,7 +157,8 @@ ul.ub-nav {
     margin: 15px 0; }
 
 .ub-deets-container {
-  padding: auto 75px; }
+  float: left;
+  text-align: left; }
 
 .ub-days {
   font-size: 2em;
@@ -188,4 +221,7 @@ ul.ub-fit-list, ol.ub-fit-list {
     width: 100%; }
 
   .ub-expanded {
-    width: 30%; } }
+    width: 30%; }
+
+  .ub-logo {
+    margin: 0 auto; } }
