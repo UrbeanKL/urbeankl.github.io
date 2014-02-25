@@ -1,5 +1,9 @@
-{% for post in site.posts reversed %}
 
+<section class="ub-section ub-mobile-deets hidden-sm hidden-md hidden-lg ">
+    <div class="ub-mobile">{% include opening-deets.html %}</div>
+</section>
+
+{% for post in site.posts reversed %}
 <section class="ub-section ub-story" id={{post.anchor}}>
 
     <h1>{{post.title}}</h1>

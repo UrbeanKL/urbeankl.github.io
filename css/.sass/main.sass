@@ -112,6 +112,7 @@ p
     margin: 0 auto
     padding-left: $space * 1.5
 
+
 .ub-sidebar-header
     // display: table-cell
     float: left
@@ -125,6 +126,8 @@ p
     width: 70%
     vertical-align: top
 
+.ub-sidebar-deets
+    padding-top: $space * 4
 // Nav stuff
 ul.ub-nav
     padding-left: 0
@@ -162,7 +165,6 @@ ul.ub-nav
     clear: both
     margin: 0 auto
     margin-bottom: $space
-    padding-top: $space * 4
     hr 
         margin: $space 0
     
@@ -187,15 +189,21 @@ ul.ub-nav
 
 // Social
 .ub-social
+    margin: 0 auto
     margin-top: $space 
+    li
+        padding: $space
 
 
-// Mobile classes
-.ub-hidden-mobile
-    display: none !important
+// // Mobile classes
+// .ub-hidden-mobile
+//     display: none !important
 
 .ub-mobile-deets
+    // background-color: rgba($secondary-color, 0)
     font-size: 1.5em
+    hr 
+        border-top: 1px solid $secondary-color
 
 .ub-mobile-nav
     position: fixed
@@ -203,8 +211,10 @@ ul.ub-nav
     margin: 0 auto
     padding-top: $space * 4
     height: 100%
-    background-color: lighten($secondary-color, 10%)
-    font-size: 2em
+    background-color: lighten($secondary-color, 5%)
+    .navbar-nav
+        ul li a
+            font-size: 2em
 
 // DANGER: BOOTSTRAP OVERWRITE
 .row 
@@ -224,7 +234,6 @@ ul.ub-nav
     margin-bottom: $space
     float: none
     border-color: rgba($tertiary-color, 0.4)
-    // background-color: rgba($tertiary-color, 0.4)
     .icon-bar
         background-color: $tertiary-color
 
@@ -239,16 +248,25 @@ ul.ub-fit-list, ol.ub-fit-list
         text-align: center
         &:first-child
             text-align: left
+            padding-left: 0px
         &:last-child
             text-align: right
+            padding-right: 0px
 
 .clear, .hidden-xs
     clear: both
 
 .ub-expanded
     width: 100%
+    left: 0px
     transition: 0.5s
     -webkit-transition: 0.5s
+
+.ub-hidden-mobile
+    width: 0
+    left: -1000px
+    transition: 2s
+    -webkit-transition: 2s
 
 // Custom responsive -- may override Bootstrap
 $xs-width: 767px
@@ -267,3 +285,10 @@ $sm-min-width: 768px
 
     .ub-sidebar-wrapper
         padding-left: 0
+
+    .ub-social
+        li
+            a 
+                padding: $space
+                background-color: rgba($secondary-color, 0.8)
+                border-radius: $space/2

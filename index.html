@@ -19,24 +19,27 @@ layout: default
                 </button>
 
                 <!--Main Logo -->
-                <img class="ub-logo img-responsive" src="img/logo.png"/>
+                <a href="#top">
+                    <img class="ub-logo img-responsive" src="img/logo.png"/>
+                </a>
             </div>
 
             <div class="ub-sidebar-collapse">
                 <ul class="navbar-nav navbar-collapse collapse ub-nav">{% include nav.html %}</ul>
             </div>
 
-            <div class="hidden-xs">{% include opening-deets.html %}</div>
+            <div class="ub-sidebar-deets hidden-xs">{% include opening-deets.html %}</div>
         </div>
         </div>
     </div>
 
-    <div class="ub-column ub-content col-xs-10 col-sm-8 col-md-6 col-lg-6">{% include contents.html %}</div>
-    <!-- <div class="ub-mobile-deets ub-mobile">{% include opening-deets.html %}</div> -->
+    <div id="top" class="ub-column ub-content col-xs-10 col-sm-8 col-md-6 col-lg-6">
+        {% include contents.html %}
+    </div>
 
     <div class="ub-mobile-nav  ub-hidden-mobile hidden-md hidden-lg">
         <div class="mobile-container">
-        <ul class="navbar-nav ub-nav">{% include nav.html %}</ul>
+        <ul class="navbar-nav ub-nav ub-mobile-nav-list">{% include nav.html %}</ul>
     </div>
     </div>
 </div>

@@ -35,9 +35,8 @@ $(function(){
 
 
     navbarToggle.click(function(){
-      console.log('clock')
+        mobileNav.toggleClass(expandedClass)
         mobileNav.toggleClass('ub-hidden-mobile');
-        mobileNav.toggleClass(expandedClass, 800)
         if(mobileNav.hasClass(expandedClass)){
           mobileNav.css({
             paddingLeft: $('.ub-sidebar').width() + space * 2,
