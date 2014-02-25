@@ -69,7 +69,9 @@ p {
   padding-top: 60px; }
 
 .ub-sidebar-header {
-  display: table-cell; }
+  display: table-cell;
+  vertical-align: top;
+  text-align: center; }
 
 .ub-sidebar-collapse {
   vertical-align: top;
@@ -104,7 +106,7 @@ ul.ub-nav {
     float: left; }
 
 .ub-logo {
-  padding-top: 10px; }
+  display: block; }
 
 .ub-reveal {
   background-color: rgba(255, 255, 255, 0.5); }
@@ -143,6 +145,18 @@ ul.ub-nav {
 .container {
   display: table-row;
   width: 100%; }
+
+.navbar {
+  background-color: #1f1a21;
+  background-image: none; }
+
+.navbar-toggle {
+  margin: 0;
+  margin-bottom: 15px;
+  float: none;
+  border-color: rgba(255, 255, 255, 0.4); }
+  .navbar-toggle .icon-bar {
+    background-color: white; }
 
 ul.ub-fit-list, ol.ub-fit-list {
   width: 100%;

@@ -87,6 +87,8 @@ p
 
 .ub-sidebar-header
     display: table-cell
+    vertical-align: top
+    text-align: center
     
 .ub-sidebar-collapse
     vertical-align: top
@@ -98,7 +100,7 @@ ul.ub-nav
     margin-left: 0
     list-style: none
 
-.ub-nav
+.ub-nav, 
     margin: 0
 
     font-family: $heading-fonts
@@ -125,7 +127,7 @@ ul.ub-nav
         float: left
 
 .ub-logo 
-    padding-top: $nav-line-height/4
+    display: block
 
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)
@@ -163,6 +165,19 @@ ul.ub-nav
 .container
     display: table-row
     width: 100%
+
+.navbar
+    background-color: $secondary-color
+    background-image: none
+
+.navbar-toggle 
+    margin: 0
+    margin-bottom: $space
+    float: none
+    border-color: rgba($tertiary-color, 0.4)
+    // background-color: rgba($tertiary-color, 0.4)
+    .icon-bar
+        background-color: $tertiary-color
 
 // General CSS
 ul.ub-fit-list, ol.ub-fit-list

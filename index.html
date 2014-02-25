@@ -8,7 +8,7 @@ layout: default
             <img class="img-responsive" src="img/bg.png" alt=""/>
         </div>
         <div class="ub-sidebar-container ub-column col-xs-2 col-sm-4 col-md-3 col-lg-2">
-            <div class="ub-sidebar">
+            <div class="navbar ub-sidebar">
                     <div class="ub-sidebar-header">
                         <!-- Toggle menu button -->
                         <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,7 +23,7 @@ layout: default
                     </div>
 
                     <div class="ub-sidebar-collapse">
-                        <ul class="ub-nav">
+                        <ul class="navbar-nav navbar-collapse collapse ub-nav">
                             <li>
                                 <a href="#ub-story">Our Story</a>
                             </li>
@@ -51,35 +51,8 @@ layout: default
                         </ul>
                     </div>
 
-                    <div class="ub-deets">
-                        <div class="ub-days">open daily</div>
-                        <div class="ub-hours">10A - 10P</div>
-                        <hr/>
-                        <div class="ub-address">
-                            <span class="ub-address-st">C-14, Avenue K</span>
-                            <br/>
-                            50450 Kuala Lumpur
-                        </div>
-
-                        <div class="ub-social">
-                            <ul class="ub-fit-list">
-                                <li>
-                                    <a href="#">
-                                        <img src="img/social/ub-social-03.png"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="img/social/ub-social-01.png"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="img/social/ub-social-02.png"/>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="hidden-xs">
+                        {% include opening-deets.html %}
                     </div>
                     
             </div>
@@ -92,14 +65,7 @@ layout: default
             {% include contents.html %}
         </div>
 
-        <div class="ub-column ub-reveal hide col-sm-12 col-md-4 col-lg-4">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <div class="ub-column ub-reveal col-sm-12 col-md-4 col-lg-4 hidden-xs">
+           
         </div>
     </div>
