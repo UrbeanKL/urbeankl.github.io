@@ -29,10 +29,26 @@ $(function(){
 
 $(function(){
     var navbarToggle = $('.navbar-toggle');
+    var mobileNav = $(".ub-mobile-nav");
+    var expandedClass = 'ub-expanded';
+    var space = 15;
 
 
     navbarToggle.click(function(){
-        $(".ub-mobile-nav").removeClass('hide')
-        $(".ub-mobile-deets").removeClass('hide')
+      console.log('clock')
+        mobileNav.toggleClass('ub-hidden-mobile');
+        mobileNav.toggleClass(expandedClass, 800)
+        if(mobileNav.hasClass(expandedClass)){
+          mobileNav.css({
+            paddingLeft: $('.ub-sidebar').width() + space * 2,
+          })
+        }
+
+        else{
+          mobileNav.css({
+            paddingLeft: 0,
+          })
+        }
+
     })
 })

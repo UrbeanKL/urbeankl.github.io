@@ -20,14 +20,6 @@ h1 {
 p {
   font-weight: bold; }
 
-.ub-desc {
-  font-family: "Courier New", "Lucida Console", monospace;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  font-weight: bold;
-  padding-top: 0 !important; }
-
 .ub-bg-image {
   background-image: url("../img/bg.png");
   background-color: #1f1a21;
@@ -93,41 +85,52 @@ ul.ub-nav {
   margin-left: 0;
   list-style: none; }
 
-.ub-nav {
+.ub-nav, .navbar-nav {
   margin: 0;
   font-family: "dk_kwarkregular", Arial, sans-serif; }
-  .ub-nav li {
-    font-size: 32px;
-    line-height: 32px;
+  .ub-nav li, .navbar-nav li {
     clear: both;
+    font-size: 32px;
     width: 100%; }
-    .ub-nav li a {
+    .ub-nav li a, .navbar-nav li a {
+      line-height: 32px;
       display: block;
       color: rgba(255, 255, 255, 0.7);
-      text-decoration: none; }
-      .ub-nav li a:active {
+      text-decoration: none;
+      padding-top: 7.5px;
+      padding-bottom: 7.5px; }
+      .ub-nav li a:active, .navbar-nav li a:active {
         color: white; }
-      .ub-nav li a:focus, .ub-nav li a:hover {
-        background-color: #1f1a21 !important;
+      .ub-nav li a:focus, .ub-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:hover {
+        background-color: transparent !important;
         color: white; }
-    .ub-nav li hr {
+    .ub-nav li hr, .navbar-nav li hr {
       width: 90%;
       color: rgba(255, 255, 255, 0.7);
       border-top: 1px solid rgba(255, 255, 255, 0.7);
       background-color: white;
       float: left; }
-  .ub-nav li:first-child a {
+  .ub-nav li:first-child a, .navbar-nav li:first-child a {
     padding-top: 0; }
+  .ub-nav .ub-desc, .navbar-nav .ub-desc {
+    font-family: "Courier New", "Lucida Console", monospace;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    font-weight: bold;
+    padding-top: 0 !important; }
 
 .ub-nav-inverse li {
-  font-size: 40px;
-  line-height: 40px;
   clear: both;
+  font-size: 40px;
   width: 100%; }
   .ub-nav-inverse li a {
+    line-height: 40px;
     display: block;
     color: rgba(31, 26, 33, 0.7);
-    text-decoration: none; }
+    text-decoration: none;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px; }
     .ub-nav-inverse li a:active {
       color: #1f1a21; }
     .ub-nav-inverse li a:focus, .ub-nav-inverse li a:hover {
@@ -181,13 +184,20 @@ ul.ub-nav {
 .ub-social {
   margin-top: 15px; }
 
+.ub-hidden-mobile {
+  display: none !important; }
+
 .ub-mobile-deets {
   font-size: 1.5em; }
 
-.ub-mobile {
-  position: absolute;
-  top: 0;
-  left: -9999px; }
+.ub-mobile-nav {
+  position: fixed;
+  z-index: 8;
+  margin: 0 auto;
+  padding-top: 60px;
+  height: 100%;
+  background-color: #3a303e;
+  font-size: 2em; }
 
 .row {
   margin: 0; }
@@ -224,12 +234,12 @@ ul.ub-fit-list, ol.ub-fit-list {
 .clear, .hidden-xs {
   clear: both; }
 
+.ub-expanded {
+  width: 100%; }
+
 @media (max-width: 768px) {
   .ub-sidebar-header {
     width: 100%; }
-
-  .ub-expanded {
-    width: 30%; }
 
   .ub-logo {
     margin: 0 auto; }

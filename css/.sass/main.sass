@@ -36,20 +36,25 @@ p
 
 
 //Custom classes
+@mixin frosty-bg
+    background-color: rgba($tertiary-color, 0.7)
+
 @mixin nav-style($color, $bg-color, $font-sz)
     li 
-        font-size: $font-sz
-        line-height: $font-sz
         clear: both
+        font-size: $font-sz
         width: 100%
         a
+            line-height: $font-sz
             display: block
             color: rgba($color, 0.7)
             text-decoration: none
+            padding-top: $space/2
+            padding-bottom: $space/2
             &:active
                 color: $color
             &:focus, &:hover
-                background-color: $bg-color !important
+                background-color: transparent !important
                 color: $color
         hr 
             width: 90%
@@ -57,14 +62,6 @@ p
             border-top: 1px solid rgba($color, 0.7)
             background-color: $color
             float: left
-
-.ub-desc
-    font-family: $body-fonts
-    font-size: 16px
-    line-height: 20px
-    color: $secondary-text-color
-    font-weight: bold
-    padding-top: 0 !important
 
 .ub-bg-image
     background-image: url('../img/bg.png')
@@ -83,7 +80,7 @@ p
         max-height: 100%
 
 .ub-content
-    background-color: rgba($tertiary-color, 0.7)
+    @include frosty-bg
 
 .ub-section
     min-height: 1000px
@@ -134,12 +131,20 @@ ul.ub-nav
     margin-left: 0
     list-style: none
 
-.ub-nav
+.ub-nav, .navbar-nav
     @include nav-style($secondary-text-color, $secondary-color, 32px)
     margin: 0
     font-family: $heading-fonts
     li:first-child a
         padding-top: 0
+
+    .ub-desc
+        font-family: $body-fonts
+        font-size: 16px
+        line-height: 18px
+        color: $secondary-text-color
+        font-weight: bold
+        padding-top: 0 !important
 
 .ub-nav-inverse
     @include nav-style($secondary-color, transparent, 40px)
@@ -186,13 +191,20 @@ ul.ub-nav
 
 
 // Mobile classes
+.ub-hidden-mobile
+    display: none !important
+
 .ub-mobile-deets
     font-size: 1.5em
 
-.ub-mobile
-    position: absolute
-    top: 0
-    left: -9999px
+.ub-mobile-nav
+    position: fixed
+    z-index: 8
+    margin: 0 auto
+    padding-top: $space * 4
+    height: 100%
+    background-color: lighten($secondary-color, 10%)
+    font-size: 2em
 
 // DANGER: BOOTSTRAP OVERWRITE
 .row 
@@ -233,6 +245,9 @@ ul.ub-fit-list, ol.ub-fit-list
 .clear, .hidden-xs
     clear: both
 
+.ub-expanded
+    width: 100%
+
 // Custom responsive -- may override Bootstrap
 $xs-width: 767px
 $sm-max-width: 991px
@@ -241,8 +256,7 @@ $sm-min-width: 768px
 @media (max-width: $sm-min-width)
     .ub-sidebar-header
         width: 100%
-    .ub-expanded
-        width: 30%
+
     .ub-logo
         margin: 0 auto
 
