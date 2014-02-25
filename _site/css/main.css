@@ -17,31 +17,6 @@ h1 {
   font-size: 56px;
   margin-top: 0; }
 
-.nav {
-  font-family: "dk_kwarkregular", Arial, sans-serif;
-  font-size: 32px;
-  line-height: 25px;
-  margin-left: 45px; }
-  .nav li:first-child a {
-    padding-top: 0; }
-  .nav li {
-    width: 100%;
-    clear: both; }
-    .nav li a {
-      display: block;
-      color: rgba(255, 255, 255, 0.7); }
-      .nav li a:active {
-        color: white; }
-      .nav li a:focus, .nav li a:hover {
-        background-color: #1f1a21 !important;
-        color: white; }
-  .nav hr {
-    margin: 15px;
-    width: 90%; }
-
-p {
-  font-weight: bold; }
-
 .ub-desc {
   font-family: "Courier New", "Lucida Console", monospace;
   font-size: 16px;
@@ -82,6 +57,7 @@ p {
     margin: 0 auto; }
 
 .ub-sidebar {
+  color: white;
   position: fixed;
   left: 0;
   height: 100%;
@@ -91,6 +67,32 @@ p {
 
 .ub-section, .ub-sidebar {
   padding-top: 60px; }
+
+.ub-nav {
+  list-style: none;
+  font-family: "dk_kwarkregular", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  margin-left: 45px; }
+  .ub-nav li:first-child a {
+    padding-top: 0; }
+  .ub-nav li {
+    width: 100%;
+    clear: both; }
+    .ub-nav li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.7); }
+      .ub-nav li a:active {
+        color: white; }
+      .ub-nav li a:focus, .ub-nav li a:hover {
+        background-color: #1f1a21 !important;
+        color: white; }
+  .ub-nav hr {
+    margin: 15px;
+    width: 90%; }
+
+p {
+  font-weight: bold; }
 
 .ub-reveal {
   background-color: rgba(255, 255, 255, 0.5); }
@@ -123,47 +125,12 @@ p {
 .ub-social {
   margin-top: 15px; }
 
-.navbar, .nav {
-  background-color: #1f1a21;
-  background-image: none;
-  color: white; }
-
 .row {
   margin: 0; }
-
-.navbar {
-  border: none;
-  border-radius: 0; }
-
-.navbar-nav {
-  margin: 0 0 0 45px; }
-
-.navbar-header {
-  margin: 0 auto;
-  text-align: center;
-  margin-left: 0;
-  margin-right: 0;
-  display: table-cell;
-  position: absolute; }
-
-.navbar-collapse {
-  border: 0px;
-  -webkit-box-shadow: none;
-  width: 100%;
-  margin: 0 0 0 0;
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden; }
 
 .container {
   display: table-row;
   width: 100%; }
-
-.navbar-toggle {
-  margin-bottom: 15px;
-  margin-top: -15px;
-  float: none;
-  clear: none; }
 
 ul.ub-fit-list, ol.ub-fit-list {
   width: 100%;

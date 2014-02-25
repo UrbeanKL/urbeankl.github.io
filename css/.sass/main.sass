@@ -29,33 +29,6 @@ h1
     font-size: 56px
     margin-top: 0
 
-.nav
-    font-family: $heading-fonts
-    font-size: 32px
-    line-height: 25px
-    margin-left: $space * 3
-    li:first-child a
-        padding-top: 0
-
-    li 
-        width: 100%
-        clear: both
-        a
-            display: block
-            color: rgba($secondary-text-color, 0.7)
-            &:active
-                color: $secondary-text-color
-            &:focus, &:hover
-                background-color: $secondary-color !important
-                color: $secondary-text-color
-
-    hr 
-        margin: $space
-        width: 90%
-
-p 
-    font-weight: bold
-
 //URBEAN CLASSES
 .ub-desc
     font-family: $body-fonts
@@ -89,6 +62,7 @@ p
 
 .ub-column
     padding: 0 $space * 2
+
 .ub-sidebar-container
     display: block
     padding-right: 20px
@@ -97,6 +71,7 @@ p
         margin: 0 auto
 
 .ub-sidebar
+    color: $secondary-text-color
     position: fixed
     left: 0
     height: 100%
@@ -106,6 +81,35 @@ p
 
 .ub-section, .ub-sidebar
     padding-top: $space * 4
+
+
+.ub-nav
+    list-style: none
+    font-family: $heading-fonts
+    font-size: 32px
+    line-height: 32px
+    margin-left: $space * 3
+    li:first-child a
+        padding-top: 0
+
+    li 
+        width: 100%
+        clear: both
+        a
+            display: block
+            color: rgba($secondary-text-color, 0.7)
+            &:active
+                color: $secondary-text-color
+            &:focus, &:hover
+                background-color: $secondary-color !important
+                color: $secondary-text-color
+
+    hr 
+        margin: $space
+        width: 90%
+
+p 
+    font-weight: bold
 
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)
@@ -137,41 +141,13 @@ p
     margin-top: $space 
 
 // BOOTSTRAP OVERWRITE
-.navbar, .nav
-    background-color: $secondary-color
-    background-image: none
-    color: $secondary-text-color
 .row 
     margin: 0
-.navbar 
-    border: none
-    border-radius: 0
-.navbar-nav
-    margin: 0 0 0 $space * 3
-.navbar-header
-    margin: 0 auto
-    text-align: center
-    margin-left: 0
-    margin-right: 0
-    display: table-cell
-    position: absolute 
 
-.navbar-collapse
-    border: 0px
-    -webkit-box-shadow: none
-    width: 100%
-    margin: 0 0 0 0 
-    padding: 0
-    overflow-x: hidden
-    overflow-y: hidden
 .container
     display: table-row
     width: 100%
-.navbar-toggle 
-    margin-bottom: $space
-    margin-top: -$space
-    float: none
-    clear: none
+
 // General CSS
 ul.ub-fit-list, ol.ub-fit-list
     width: 100%
@@ -184,8 +160,3 @@ ul.ub-fit-list, ol.ub-fit-list
             text-align: left
         &:last-child
             text-align: right
-
-
-// @media (min-width: 768px) 
-//     .navbar-collapse.collapse
-//         display: inline !important
