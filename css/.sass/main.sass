@@ -10,6 +10,8 @@ $secondary-text-color: #FFFFFF
 
 $space: 15px
 
+$nav-line-height: 40px
+
 // DOM OBJECTS
 body
     font-family: $body-fonts
@@ -29,10 +31,15 @@ h1
     font-size: 56px
     margin-top: 0
 
+p 
+    font-weight: bold
+
+
 //URBEAN CLASSES
 .ub-desc
     font-family: $body-fonts
     font-size: 16px
+    line-height: 20px
     color: $secondary-text-color
     font-weight: bold
     padding-top: 0 !important
@@ -50,9 +57,6 @@ h1
         height: auto
         width: 100%
 
-.ub-logo, .img-responsive, .navbar-toggle
-    margin: 0 auto 
-
 .ub-content
     background-color: rgba($tertiary-color, 0.7)
 
@@ -65,35 +69,46 @@ h1
 
 .ub-sidebar-container
     display: block
-    padding-right: 20px
-    background-color: $secondary-color
     .container 
         margin: 0 auto
 
 .ub-sidebar
-    color: $secondary-text-color
+    display: table-row
     position: fixed
     left: 0
     height: 100%
-    width: inherit
     padding: $space
-    margin: 0 auto
+    width: inherit
+    background-color: $secondary-color
+    color: $secondary-text-color
 
 .ub-section, .ub-sidebar
     padding-top: $space * 4
 
+.ub-sidebar-header
+    display: table-cell
+    
+.ub-sidebar-collapse
+    vertical-align: top
+    display: table-cell
+    padding-left: $space
+
+ul.ub-nav
+    padding-left: 0
+    margin-left: 0
+    list-style: none
 
 .ub-nav
-    list-style: none
+    margin: 0
+
     font-family: $heading-fonts
-    font-size: 32px
-    line-height: 32px
-    margin-left: $space * 3
+
     li:first-child a
         padding-top: 0
 
     li 
-        width: 100%
+        font-size: 32px
+        line-height: $nav-line-height
         clear: both
         a
             display: block
@@ -105,11 +120,12 @@ h1
                 color: $secondary-text-color
 
     hr 
-        margin: $space
+        margin: $space 0
         width: 90%
+        float: left
 
-p 
-    font-weight: bold
+.ub-logo 
+    padding-top: $nav-line-height/4
 
 .ub-reveal
     background-color: rgba($tertiary-color, 0.5)

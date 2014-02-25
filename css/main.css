@@ -17,9 +17,13 @@ h1 {
   font-size: 56px;
   margin-top: 0; }
 
+p {
+  font-weight: bold; }
+
 .ub-desc {
   font-family: "Courier New", "Lucida Console", monospace;
   font-size: 16px;
+  line-height: 20px;
   color: white;
   font-weight: bold;
   padding-top: 0 !important; }
@@ -37,9 +41,6 @@ h1 {
     height: auto;
     width: 100%; }
 
-.ub-logo, .img-responsive, .navbar-toggle {
-  margin: 0 auto; }
-
 .ub-content {
   background-color: rgba(255, 255, 255, 0.7); }
 
@@ -50,34 +51,44 @@ h1 {
   padding: 0 30px; }
 
 .ub-sidebar-container {
-  display: block;
-  padding-right: 20px;
-  background-color: #1f1a21; }
+  display: block; }
   .ub-sidebar-container .container {
     margin: 0 auto; }
 
 .ub-sidebar {
-  color: white;
+  display: table-row;
   position: fixed;
   left: 0;
   height: 100%;
-  width: inherit;
   padding: 15px;
-  margin: 0 auto; }
+  width: inherit;
+  background-color: #1f1a21;
+  color: white; }
 
 .ub-section, .ub-sidebar {
   padding-top: 60px; }
 
+.ub-sidebar-header {
+  display: table-cell; }
+
+.ub-sidebar-collapse {
+  vertical-align: top;
+  display: table-cell;
+  padding-left: 15px; }
+
+ul.ub-nav {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none; }
+
 .ub-nav {
-  list-style: none;
-  font-family: "dk_kwarkregular", Arial, sans-serif;
-  font-size: 32px;
-  line-height: 32px;
-  margin-left: 45px; }
+  margin: 0;
+  font-family: "dk_kwarkregular", Arial, sans-serif; }
   .ub-nav li:first-child a {
     padding-top: 0; }
   .ub-nav li {
-    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
     clear: both; }
     .ub-nav li a {
       display: block;
@@ -88,11 +99,12 @@ h1 {
         background-color: #1f1a21 !important;
         color: white; }
   .ub-nav hr {
-    margin: 15px;
-    width: 90%; }
+    margin: 15px 0;
+    width: 90%;
+    float: left; }
 
-p {
-  font-weight: bold; }
+.ub-logo {
+  padding-top: 10px; }
 
 .ub-reveal {
   background-color: rgba(255, 255, 255, 0.5); }
