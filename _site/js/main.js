@@ -56,7 +56,8 @@ $(function(){
 // Maps
 $(function(){
   function initialize() {
-    var akLatLong = new google.maps.LatLng(3.159317,101.713077)
+    var akLatLong = new google.maps.LatLng(3.159317,101.713077);
+    var offcenter = new google.maps.LatLng(3.158706,101.695342);
     var ubInfoWindowContent = "<div class='ub-infowindow'>\
         <h1>Urbean KL</h1>\
         <p>\
@@ -68,7 +69,7 @@ $(function(){
       </div>" ;
 
         var mapOptions = {
-          center: akLatLong,
+          center: new google.maps.LatLng(3.159317,101.713077),
           zoom: 15
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
@@ -89,6 +90,7 @@ $(function(){
           infowindow.open(map, marker);
         })
         infowindow.open(map, marker); 
+        map.panTo(offcenter);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 })
