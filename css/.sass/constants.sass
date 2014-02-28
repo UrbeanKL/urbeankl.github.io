@@ -22,7 +22,7 @@ $h1-size: 56px
 @mixin frosty-bg
     background-color: rgba($tertiary-color, 0.8)
 
-@mixin nav-style($color, $bg-color, $font-sz)
+@mixin nav-style($color, $bg-color, $font-sz, $active-color)
     li 
         clear: both
         font-size: $font-sz
@@ -39,6 +39,10 @@ $h1-size: 56px
             &:focus, &:hover
                 background-color: transparent !important
                 color: $color
+
+            &.active
+                color: $active-color
+
         hr 
             width: 90%
             color: rgba($color, 0.7)

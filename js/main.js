@@ -26,6 +26,35 @@ $(function() {
   });
 });
 
+//Highlight active section in nav. Modified from http://jsfiddle.net/x3V6Y/ 
+$(function(){
+    var sections = {},
+        _height  = $(window).height(),
+        i        = 0;
+    
+    // Grab positions of our sections 
+    $('section').each(function(){
+        sections[this.id] = $(this).offset().top;
+        console.log(this.id)
+    });
+
+    $(document).scroll(function(){
+        var $this = $(this),
+            pos   = $this.scrollTop();
+
+        // pos += $($('.ub-nav')[0]).height();
+            
+        for(i in sections){
+            if(sections[i] <= pos && sections[i] <= pos + _height){
+                $('a').removeClass('active');
+                $('a[href="/index.html#' + i + '"]').addClass('active');
+
+                console.log(sections[i])
+                console.log(i)
+            }  
+        }
+    });
+});
 
 // Responsive menu close on menu item click
 $(function(){

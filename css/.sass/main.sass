@@ -131,7 +131,7 @@ ul.ub-nav
     list-style: none
 
 .ub-nav, .navbar-nav
-    @include nav-style($secondary-text-color, $secondary-color, 32px)
+    @include nav-style($secondary-text-color, $secondary-color, 32px, $primary-color)
     margin: 0
     font-family: $heading-fonts
     li:first-child a
@@ -146,7 +146,7 @@ ul.ub-nav
         padding-top: 0 !important
 
 .ub-nav-inverse
-    @include nav-style($secondary-color, transparent, 40px)
+    @include nav-style($secondary-color, transparent, 40px, $primary-color)
 
 .ub-logo 
     display: block
