@@ -1,3 +1,11 @@
+// Make height of each section == window height
+$(function(){
+  var windowHeight = $(window).height();
+  $('.ub-section').each(function(i, e){
+    $(e).height(windowHeight);
+  });
+})
+
 //Smooth scrolling. Taken from http://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
