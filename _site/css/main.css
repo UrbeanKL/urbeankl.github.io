@@ -261,6 +261,9 @@ ul.ub-fit-list, ol.ub-fit-list {
   transition: 2s;
   -webkit-transition: 2s; }
 
+.ub-btn-active {
+  background-color: rgba(255, 255, 255, 0.5); }
+
 #map-canvas {
   top: 0;
   width: 100%;

@@ -35,7 +35,8 @@ $(function(){
 
 
     navbarToggle.click(function(){
-        mobileNav.toggleClass(expandedClass)
+        navbarToggle.toggleClass('ub-btn-active');
+        mobileNav.toggleClass(expandedClass);
         mobileNav.toggleClass('ub-hidden-mobile');
         if(mobileNav.hasClass(expandedClass)){
           mobileNav.css({
