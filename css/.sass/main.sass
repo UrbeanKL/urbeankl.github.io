@@ -50,9 +50,11 @@ hr
         color: $primary-color
         background-color: rgba($primary-color, 0)
 .ub-bg-image
-    background-image: url('../img/bg.png')
+    background-size: 100% auto
+    background-image: url('../img/bg.jpg')
     background-color: $secondary-color
-    background-position: center
+    background-position: right
+    background-repeat: no-repeat
     position: fixed
     top: 0
     right: 0
@@ -274,7 +276,7 @@ ul.ub-fit-list, ol.ub-fit-list
     position: absolute
     bottom: 0
     width: 100%
-    min-height: $min-section-height + $section-sidebar-top-padding //account for padding
+    min-height: $min-section-height //account for padding
     z-index: 1
     display: block
 
@@ -292,6 +294,9 @@ $sm-max-width: 991px
 $sm-min-width: 768px
 
 @media (max-width: $sm-min-width)
+    .ub-bg-image
+        background-size: auto 100% 
+
     .ub-sidebar-header
         width: 100%
 

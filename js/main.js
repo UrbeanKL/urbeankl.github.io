@@ -2,8 +2,12 @@
 $(function(){
   var windowHeight = $(window).height();
   $('.ub-section').each(function(i, e){
-    $(e).height(windowHeight);
+    $(e).css({
+      minHeight: windowHeight
+    });
   });
+
+  $('#map-canvas').height($('.ub-find').height());
 })
 
 //Smooth scrolling. Taken from http://css-tricks.com/snippets/jquery/smooth-scrolling/

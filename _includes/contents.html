@@ -4,7 +4,7 @@
 </section>
 
 {% for post in site.posts reversed %}
-<section class="ub-section ub-story" id={{post.anchor}}>
+<section class="ub-section {{post.anchor}}" id={{post.anchor}}>
 
     <h1>{{post.title}}
         {% if post.titleFlair %}
