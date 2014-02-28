@@ -56,12 +56,37 @@ $(function(){
 // Maps
 $(function(){
   function initialize() {
+    var akLatLong = new google.maps.LatLng(3.159317,101.713077)
+    var ubInfoWindowContent = "<div class='ub-infowindow'>\
+        <h1>Urbean KL</h1>\
+        <p>\
+          C-14 Avenue K,<br/>\
+          50450 Kuala Lumpur\
+        </p>\
+      </div>" ;
+
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
+          center: akLatLong,
+          zoom: 15
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
+
+        // Add Avenue K marker
+        var marker = new google.maps.Marker({
+          position: akLatLong,
+          map: map,
+          title: "Urbean KL"
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: ubInfoWindowContent
+        })
+
+        google.maps.event.addListener(marker, 'click', function(){
+          infowindow.open(map, marker);
+        })
+        infowindow.open(map, marker); 
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 })
