@@ -108,6 +108,9 @@ p
 
 .ub-sidebar-deets
     padding-top: $space * 4
+    a
+        color: $tertiary-color
+        text-decoration: none
 // Nav stuff
 ul.ub-nav
     padding-left: 0
@@ -179,6 +182,10 @@ ul.ub-nav
 
 .ub-mobile-deets
     // background-color: rgba($secondary-color, 0)
+    color: $secondary-color
+    a 
+        color: $secondary-color
+        text-decoration: none
     font-size: 1.5em
     hr 
         border-top: 1px solid $secondary-color
@@ -195,6 +202,20 @@ ul.ub-nav
             font-size: 2em
 
 // General CSS
+.ub-back-to-top
+    display: inline 
+    position: fixed
+    z-index: 9999
+    right: 0
+    bottom: 0
+    
+    padding: $space/3
+    background-color: $secondary-color
+    color: $secondary-text-color
+    
+    a
+        color: $secondary-text-color
+
 ul.ub-fit-list, ol.ub-fit-list
     width: 100%
     padding: 0
