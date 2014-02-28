@@ -20,6 +20,14 @@ h1 {
 p {
   font-weight: bold; }
 
+.ub-content a {
+  text-decoration: underline;
+  color: white;
+  background-color: #2bb673; }
+  .ub-content a:hover, .ub-content a:focus {
+    color: #2bb673;
+    background-color: rgba(43, 182, 115, 0); }
+
 .ub-bg-image {
   background-image: url("../img/bg.png");
   background-color: #1f1a21;
@@ -252,6 +260,12 @@ ul.ub-fit-list, ol.ub-fit-list {
   left: -1000px;
   transition: 2s;
   -webkit-transition: 2s; }
+
+#map-canvas {
+  top: 0;
+  width: 100%;
+  min-height: 500px;
+  height: 100%; }
 
 @media (max-width: 768px) {
   .ub-sidebar-header {

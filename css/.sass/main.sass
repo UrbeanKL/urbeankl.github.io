@@ -4,6 +4,7 @@ $body-fonts:  'Courier New', 'Lucida Console', monospace
 $heading-fonts:  'dk_kwarkregular', Arial, sans-serif
 $tertiary-fonts:  'kg_one_more_nightregular', Arial, sans-serif
 
+$primary-color: #2BB673
 $secondary-color: #1F1A21
 $tertiary-color: #FFFFFF
 $secondary-text-color: #FFFFFF
@@ -35,6 +36,13 @@ p
     font-weight: bold
 
 
+.ub-content a 
+    text-decoration: underline
+    color: $tertiary-color
+    background-color: rgba($primary-color, 1)
+    &:hover, &:focus 
+        color: $primary-color
+        background-color: rgba($primary-color, 0)
 //Custom classes
 @mixin frosty-bg
     background-color: rgba($tertiary-color, 0.7)
@@ -267,6 +275,16 @@ ul.ub-fit-list, ol.ub-fit-list
     left: -1000px
     transition: 2s
     -webkit-transition: 2s
+
+
+// Maps
+#map-canvas
+    // position: absolute
+    // z-index: -1
+    top: 0
+    width: 100%
+    min-height: 500px
+    height: 100%
 
 // Custom responsive -- may override Bootstrap
 $xs-width: 767px
