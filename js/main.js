@@ -63,6 +63,8 @@ $(function(){
           C-14 Avenue K,<br/>\
           50450 Kuala Lumpur\
         </p>\
+        <p><a target='_blank' href='https://maps.google.com.my/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=Mj+Avenue+K,+156+Jalan+Ampang,+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur&geocode=CR6FaGrnlNCDFbg0MAAdFAQQBiGDDfyaLHprBw&gl=MY&hl=en'>\
+        Directions</a></p>\
       </div>" ;
 
         var mapOptions = {
