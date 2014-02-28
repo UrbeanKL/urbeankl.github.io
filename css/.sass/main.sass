@@ -26,7 +26,7 @@ h3, h4
     font-weight: bold
 
 h1 
-    font-size: 56px
+    font-size: $h1-size
     margin-top: 0
 
 p 
@@ -35,7 +35,7 @@ p
 hr 
     border-top: 0px solid #000 !important
     background-color: transparent !important
-    background-size: auto 80%
+    background-size: auto 50%
     background-repeat: no-repeat
     background-position: left center
     height: 6px
@@ -120,6 +120,8 @@ hr
     a
         color: $tertiary-color
         text-decoration: none
+
+
 // Nav stuff
 ul.ub-nav
     padding-left: 0
@@ -259,6 +261,7 @@ ul.ub-fit-list, ol.ub-fit-list
 .ub-btn-active
     background-color: rgba($tertiary-color, 0.5)
 
+// Maps
 .ub-infowindow
     // background-color: $primary-color
     min-width: 200px
@@ -267,7 +270,6 @@ ul.ub-fit-list, ol.ub-fit-list
         font-weight: bold
         font-family: $body-fonts
 
-// Maps
 #map-canvas
     position: absolute
     bottom: 0
@@ -275,6 +277,14 @@ ul.ub-fit-list, ol.ub-fit-list
     min-height: $min-section-height + $section-sidebar-top-padding //account for padding
     z-index: 1
     display: block
+
+
+// Misc
+.ub-flair
+    // background-color: white
+    width: auto
+    height: $h1-size
+    display: inline-block
 
 // Custom responsive -- may override Bootstrap
 $xs-width: 767px

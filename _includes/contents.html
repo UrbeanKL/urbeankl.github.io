@@ -6,7 +6,11 @@
 {% for post in site.posts reversed %}
 <section class="ub-section ub-story" id={{post.anchor}}>
 
-    <h1>{{post.title}}</h1>
+    <h1>{{post.title}}
+        {% if post.titleFlair %}
+        <img class="ub-flair" src='img/headers/{{post.titleFlair}}'/>
+        {% endif %}
+    </h1>
     <p>
         {{post.content}}
     </p>
