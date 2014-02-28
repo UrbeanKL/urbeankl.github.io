@@ -1,0 +1,20 @@
+@import url("../fonts/font-styles.css");
+.row {
+  margin: 0; }
+
+.container {
+  display: table-row;
+  width: 100%; }
+
+.navbar {
+  background-color: #1f1a21;
+  background-image: none;
+  border-radius: 0px; }
+
+.navbar-toggle {
+  margin: 0;
+  margin-bottom: 15px;
+  float: none;
+  border-color: rgba(255, 255, 255, 0.4); }
+  .navbar-toggle .icon-bar {
+    background-color: white; }

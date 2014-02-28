@@ -1,0 +1,43 @@
+@import url('../fonts/font-styles.css')
+
+$body-fonts:  'Courier New', 'Lucida Console', monospace
+$heading-fonts:  'dk_kwarkregular', Arial, sans-serif
+$tertiary-fonts:  'kg_one_more_nightregular', Arial, sans-serif
+
+$primary-color: #2BB673
+$secondary-color: #1F1A21
+$tertiary-color: #FFFFFF
+$secondary-text-color: #FFFFFF
+
+$space: 15px
+
+$nav-line-height: 36px
+
+
+//Custom classes
+@mixin frosty-bg
+    background-color: rgba($tertiary-color, 0.7)
+
+@mixin nav-style($color, $bg-color, $font-sz)
+    li 
+        clear: both
+        font-size: $font-sz
+        width: 100%
+        a
+            line-height: $font-sz
+            display: block
+            color: rgba($color, 0.7)
+            text-decoration: none
+            padding-top: $space/2
+            padding-bottom: $space/2
+            &:active
+                color: $color
+            &:focus, &:hover
+                background-color: transparent !important
+                color: $color
+        hr 
+            width: 90%
+            color: rgba($color, 0.7)
+            border-top: 1px solid rgba($color, 0.7)
+            background-color: $color
+            float: left

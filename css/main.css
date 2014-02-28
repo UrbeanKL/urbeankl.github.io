@@ -1,4 +1,25 @@
 @import url("../fonts/font-styles.css");
+@import url("../fonts/font-styles.css");
+.row {
+  margin: 0; }
+
+.container {
+  display: table-row;
+  width: 100%; }
+
+.navbar {
+  background-color: #1f1a21;
+  background-image: none;
+  border-radius: 0px; }
+
+.navbar-toggle {
+  margin: 0;
+  margin-bottom: 15px;
+  float: none;
+  border-color: rgba(255, 255, 255, 0.4); }
+  .navbar-toggle .icon-bar {
+    background-color: white; }
+
 body {
   font-family: "Courier New", "Lucida Console", monospace;
   color: #1f1a21;
@@ -211,26 +232,6 @@ ul.ub-nav {
   background-color: #2c252f; }
   .ub-mobile-nav .navbar-nav ul li a {
     font-size: 2em; }
-
-.row {
-  margin: 0; }
-
-.container {
-  display: table-row;
-  width: 100%; }
-
-.navbar {
-  background-color: #1f1a21;
-  background-image: none;
-  border-radius: 0px; }
-
-.navbar-toggle {
-  margin: 0;
-  margin-bottom: 15px;
-  float: none;
-  border-color: rgba(255, 255, 255, 0.4); }
-  .navbar-toggle .icon-bar {
-    background-color: white; }
 
 ul.ub-fit-list, ol.ub-fit-list {
   width: 100%;
