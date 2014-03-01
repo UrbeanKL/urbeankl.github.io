@@ -26,6 +26,16 @@ $(function() {
   });
 });
 
+$(function(){
+  var bgImage = new Image();
+  bgImage.src = "./img/bg.jpg";
+
+  $(bgImage).load(function(){
+    $('.ub-bg-image').animate({opacity: 1}, {duration: 1000});
+    return false;
+  });
+});
+
 //Highlight active section in nav. Modified from http://jsfiddle.net/x3V6Y/ 
 $(function(){
     var sections = {},
@@ -35,7 +45,6 @@ $(function(){
     // Grab positions of our sections 
     $('section').each(function(){
         sections[this.id] = $(this).offset().top;
-        console.log(this.id)
     });
 
     $(document).scroll(function(){
@@ -48,9 +57,6 @@ $(function(){
             if(sections[i] <= pos && sections[i] <= pos + _height){
                 $('a').removeClass('active');
                 $('a[href="/index.html#' + i + '"]').addClass('active');
-
-                console.log(sections[i])
-                console.log(i)
             }  
         }
     });
