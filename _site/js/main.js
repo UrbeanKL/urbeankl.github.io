@@ -31,7 +31,7 @@ $(function(){
   bgImage.src = "./img/bg.jpg";
 
   $(bgImage).load(function(){
-    $('.ub-bg-image').animate({opacity: 1}, {duration: 1000});
+    $('.ub-bg-image').animate({opacity: 1}, {duration: 500});
     return false;
   });
 });
@@ -56,7 +56,7 @@ $(function(){
         for(i in sections){
             if(sections[i] <= pos && sections[i] <= pos + _height){
                 $('a').removeClass('active');
-                $('a[href="/index.html#' + i + '"]').addClass('active');
+                $('a[href="#' + i + '"]').addClass('active');
             }  
         }
     });
