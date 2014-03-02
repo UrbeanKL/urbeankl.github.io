@@ -7,7 +7,7 @@ $(function(){
     });
   });
 
-  $('#map-canvas').height($('.ub-find').height());
+  $('#map-canvas').height($('.ub-find').height() + 70);
 })
 
 //Smooth scrolling. Taken from http://css-tricks.com/snippets/jquery/smooth-scrolling/
