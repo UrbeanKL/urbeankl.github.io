@@ -4,4 +4,4 @@ guard 'livereload' do
   watch(%r{.+\.(html)})
 end
 
-guard 'sass', :input => 'css'
+guard 'sass', :input => 'css/.sass', :output => 'css/'
