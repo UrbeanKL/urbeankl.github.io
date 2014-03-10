@@ -363,3 +363,7 @@ ul.ub-fit-list, ol.ub-fit-list {
     padding: 15px;
     background-color: rgba(31, 26, 33, 0.8);
     border-radius: 7.5px; } }
+.galleria {
+  width: 600px;
+  height: 400px;
+  background-color: black; }

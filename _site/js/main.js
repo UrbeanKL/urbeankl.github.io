@@ -141,3 +141,14 @@ $(function(){
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 })
+
+
+$(function(){
+  Galleria.loadTheme('/js/vendor/galleria/themes/classic/galleria.classic.min.js');
+  Galleria.run('.galleria', {
+    picasa: 'useralbum:115934018243031326847/UrbeanCommonManCoffeeRoastersCuppingEvent',
+    picasaOptions: {
+        sort: 'date-posted-asc'
+    }
+  });
+});
