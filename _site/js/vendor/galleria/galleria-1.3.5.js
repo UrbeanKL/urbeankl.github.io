@@ -2811,13 +2811,13 @@ Galleria.prototype = {
             'image-nav' :
                 ['image-nav-right', 'image-nav-left'],
             'stage' :
-                ['images', 'loader', 'counter', 'image-nav'],
+                ['images', 'info', 'loader', 'counter', 'image-nav'],
             'thumbnails-list' :
                 ['thumbnails'],
             'thumbnails-container' :
                 ['thumb-nav-left', 'thumbnails-list', 'thumb-nav-right'],
             'container' :
-                ['stage', 'thumbnails-container', 'info', 'tooltip']
+                ['stage', 'thumbnails-container', 'tooltip']
         });
 
         Utils.hide( this.$( 'counter' ).append(

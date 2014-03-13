@@ -1,13 +1,18 @@
 // Make height of each section == window height
 $(function(){
-  var windowHeight = $(window).height();
-  $('.ub-section').each(function(i, e){
-    $(e).css({
-      minHeight: windowHeight
+  $(window).resize(function(){
+    var windowHeight = $(window).height();
+    $('.ub-section').each(function(i, e){
+      $(e).css({
+        minHeight: windowHeight
+      });
     });
+
+    $('#map-canvas').height($('.ub-find').height() + 70);
   });
 
-  $('#map-canvas').height($('.ub-find').height() + 70);
+  $(window).trigger('resize')
+
 })
 
 //Smooth scrolling. Taken from http://css-tricks.com/snippets/jquery/smooth-scrolling/
@@ -73,7 +78,7 @@ $(function(){
     });
 })
 
-
+// Navbar toggling
 $(function(){
     var navbarToggle = $('.navbar-toggle');
     var mobileNav = $(".ub-mobile-nav");
@@ -144,7 +149,6 @@ $(function(){
 
 
 $(function(){
-
   var globalGalleryFunc = function(options){
       this.bind('image', function(e){
         $(e.imageTarget).click(this.proxy(function(){
@@ -154,8 +158,10 @@ $(function(){
     }
 
   Galleria.loadTheme('/js/vendor/galleria/themes/classic/galleria.classic.js');
+  
+  // Event photos
   Galleria.run('.galleria', {
-    picasa: 'useralbum:115934018243031326847/UrbeanCommonManCoffeeRoastersCuppingEvent',
+    picasa: 'useralbum:105929555283254899191/UrbeanComMyEventPhotos',
     picasaOptions: {
         sort: 'date-posted-asc'
     },
@@ -163,6 +169,7 @@ $(function(){
     extend: globalGalleryFunc
   });
 
+  // Main gallery
   Galleria.run('.ub-main-galleria', {
     picasa: 'useralbum:105929555283254899191/UrbeanComMyGallery',
     picasaOptions: {
@@ -178,8 +185,8 @@ $(function(){
       width: $(window).width() -$('.ub-sidebar').width(),
       marginLeft: "-30px",
       position: "absolute",
-      top: $("#ub-gallery").position().top,
-      height: $(window).height() + 15,
+      top: $(".ub-gallery").position().top,
+      height: $(".ub-gallery").css('min-height')
     });
 
     console.log($(".ub-gallery").offset().top)

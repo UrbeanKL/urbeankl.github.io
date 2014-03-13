@@ -374,8 +374,20 @@ ul.ub-fit-list, ol.ub-fit-list {
   background-color: black; }
 
 .galleria-info {
+  text-align: left;
+  position: relative;
+  display: block;
+  width: 100%;
   top: auto;
-  bottom: 50px; }
+  left: auto;
+  right: auto;
+  bottom: 10px; }
+
+.galleria-counter {
+  left: auto;
+  right: 10px; }
 
 .galleria-info-text {
-  background-color: rgba(0, 0, 0, 0.7); }
+  padding-left: 0;
+  padding-top: 0;
+  background-color: transparent; }
