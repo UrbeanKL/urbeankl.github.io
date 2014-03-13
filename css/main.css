@@ -376,12 +376,13 @@ ul.ub-fit-list, ol.ub-fit-list {
 .galleria-info {
   text-align: left;
   position: relative;
+  z-index: 3;
   display: block;
   width: 100%;
   top: auto;
   left: auto;
   right: auto;
-  bottom: 25px; }
+  bottom: 30px; }
 
 .galleria-counter {
   left: auto;
