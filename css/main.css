@@ -381,13 +381,13 @@ ul.ub-fit-list, ol.ub-fit-list {
   top: auto;
   left: auto;
   right: auto;
-  bottom: 10px; }
+  bottom: 25px; }
 
 .galleria-counter {
   left: auto;
   right: 10px; }
 
 .galleria-info-text {
+  padding: 15px;
   padding-left: 0;
-  padding-top: 0;
   background-color: #1f1a21; }
