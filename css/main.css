@@ -364,6 +364,13 @@ ul.ub-fit-list, ol.ub-fit-list {
     background-color: rgba(31, 26, 33, 0.8);
     border-radius: 7.5px; } }
 .galleria {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 450px;
   background-color: black; }
+
+.galleria-info {
+  top: auto;
+  bottom: 50px; }
+
+.galleria-info-text {
+  background-color: rgba(0, 0, 0, 0.7); }

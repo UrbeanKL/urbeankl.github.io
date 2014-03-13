@@ -144,11 +144,19 @@ $(function(){
 
 
 $(function(){
-  Galleria.loadTheme('/js/vendor/galleria/themes/classic/galleria.classic.min.js');
+  Galleria.loadTheme('/js/vendor/galleria/themes/classic/galleria.classic.js');
   Galleria.run('.galleria', {
     picasa: 'useralbum:115934018243031326847/UrbeanCommonManCoffeeRoastersCuppingEvent',
     picasaOptions: {
         sort: 'date-posted-asc'
+    },
+
+    extend: function(options){
+      this.bind('image', function(e){
+        $(e.imageTarget).click(this.proxy(function(){
+          this.openLightbox();
+        }))
+      });
     }
   });
 });
