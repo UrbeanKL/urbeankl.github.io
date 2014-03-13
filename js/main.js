@@ -144,6 +144,15 @@ $(function(){
 
 
 $(function(){
+
+  var globalGalleryFunc = function(options){
+      this.bind('image', function(e){
+        $(e.imageTarget).click(this.proxy(function(){
+          this.openLightbox();
+        }))
+      });
+    }
+
   Galleria.loadTheme('/js/vendor/galleria/themes/classic/galleria.classic.js');
   Galleria.run('.galleria', {
     picasa: 'useralbum:115934018243031326847/UrbeanCommonManCoffeeRoastersCuppingEvent',
@@ -151,12 +160,32 @@ $(function(){
         sort: 'date-posted-asc'
     },
 
-    extend: function(options){
-      this.bind('image', function(e){
-        $(e.imageTarget).click(this.proxy(function(){
-          this.openLightbox();
-        }))
-      });
-    }
+    extend: globalGalleryFunc
   });
+
+  Galleria.run('.ub-main-galleria', {
+    picasa: 'useralbum:105929555283254899191/UrbeanComMyGallery',
+    picasaOptions: {
+      sort: 'date-posted-asc'
+    },
+
+    extend: globalGalleryFunc
+    });
+  
+
+  var galleriaResizeFunc = function(){
+    $(".ub-main-galleria").css({
+      width: $(window).width() -$('.ub-sidebar').width(),
+      marginLeft: "-30px",
+      position: "absolute",
+      top: $("#ub-gallery").position().top,
+      height: $(window).height() + 15,
+    });
+
+    console.log($(".ub-gallery").offset().top)
+  };
+
+  galleriaResizeFunc();
+
+  $(window).resize(galleriaResizeFunc);
 });

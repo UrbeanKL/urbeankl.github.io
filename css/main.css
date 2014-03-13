@@ -117,7 +117,8 @@ hr {
   height: 100%;
   width: inherit;
   background-color: #1f1a21;
-  color: white; }
+  color: white;
+  border: 0; }
 
 .ub-sidebar-wrapper {
   width: 90%;
@@ -363,6 +364,10 @@ ul.ub-fit-list, ol.ub-fit-list {
     padding: 15px;
     background-color: rgba(31, 26, 33, 0.8);
     border-radius: 7.5px; } }
+.ub-main-galleria {
+  width: 100%;
+  height: 500px; }
+
 .galleria {
   width: 100%;
   height: 450px;

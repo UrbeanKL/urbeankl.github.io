@@ -5,15 +5,14 @@
 
 {% for post in site.posts reversed %}
 <section class="ub-section {{post.anchor}}" id={{post.anchor}}>
-
-    <h1>{{post.title}}
-        {% if post.titleFlair %}
-        <img class="ub-flair" src='img/headers/{{post.titleFlair}}'/>
-        {% endif %}
-    </h1>
-    <p>
+    {% if post.title %}
+	    <h1>{{post.title}}
+	        {% if post.titleFlair %}
+		        <img class="ub-flair" src='img/headers/{{post.titleFlair}}'/>
+	        {% endif %}
+	    </h1>
+    {% endif %}
         {{post.content}}
-    </p>
 
 </section>
 
