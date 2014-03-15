@@ -189,7 +189,6 @@ $(function(){
       height: $(".ub-gallery").css('min-height')
     });
 
-    console.log($(".ub-gallery").offset().top)
   };
 
   galleriaResizeFunc();
